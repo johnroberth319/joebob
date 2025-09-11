@@ -6,8 +6,6 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("JoeBob")
-
 pages = {
     "Personal": [
         st.Page("streamlit_app.py", title="Home Page")
@@ -17,5 +15,9 @@ pages = {
     ],
 }
 
-pg = st.navigation(pages)
-pg.run()
+def main():
+    st.title("JoeBob")
+
+    pg = st.navigation(pages)
+    pg.run()
+
