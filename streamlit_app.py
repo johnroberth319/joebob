@@ -17,6 +17,7 @@ pages = {
 
 def main():
     st.title("JoeBob")
+    st.write("Test")
 
     pg = st.navigation(pages)
     pg.run()
