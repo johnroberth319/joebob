@@ -10,8 +10,5 @@ st.title("JoeBob")
 def page_2():
     st.title("CST435 - Deep Learning")
 
-pg = st.sidebar.selectbox("Select your page", ["Home", "CST435 - Deep Learning"])
-if pg == "CST435 - Deep Learning":
-    page_2()
-
+pg = st.navigation(["streamlit_app.py", page_2])
 pg.run()
