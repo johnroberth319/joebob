@@ -1,13 +1,12 @@
 import streamlit as st
 
-st.sidebar.title("Navigation")
-
 pages = {
     "Personal": [
         st.Page("Home.py", title="Home Page")
     ],
-    "GCU": [
-        st.Page("CST435.py", title="CST435 - Deep Learning")
+    "GCU - CST435": [
+        st.Page("CST435.py", title="CST435 - Deep Learning"),
+        st.Page("Assignment2.py", title="Assignment 2")
     ],
 }
 
