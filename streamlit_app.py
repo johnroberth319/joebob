@@ -1,11 +1,5 @@
 import streamlit as st
 
-st.set_page_config(
-    page_title="JoeBob - John's Streamlit Portfolio",
-    page_icon="🐐",
-    layout="wide"
-)
-
 pages = {
     "Personal": [
         st.Page("Home.py", title="Home Page")
