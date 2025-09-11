@@ -8,7 +8,7 @@ st.set_page_config(
 
 pages = {
     "Personal": [
-        st.Page("streamlit_app.py", title="Home Page")
+        st.Page("Home.py", title="Home Page")
     ],
     "GCU": [
         st.Page("CST435.py", title="CST435 - Deep Learning")
@@ -16,9 +16,6 @@ pages = {
 }
 
 def main():
-    st.title("JoeBob")
-    st.write("Test")
-
     pg = st.navigation(pages)
     pg.run()
 
