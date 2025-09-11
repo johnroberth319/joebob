@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.sidebar.title("Navigation")
+
 pages = {
     "Personal": [
         st.Page("Home.py", title="Home Page")
@@ -10,7 +12,6 @@ pages = {
 }
 
 def main():
-    st.sidebar.title("Navigation")
     pg = st.navigation(pages)
     pg.run()
 
