@@ -5,7 +5,9 @@ pages = {
         st.Page("Home.py", title="Home Page")
     ],
     "GCU": [
-        st.Page("CST435.py", title="CST435 - Deep Learning")
+        "CST435 - Deep Learning": [
+            st.Page("CST435.py", title="CST435 - Deep Learning")
+        ]
     ],
 }
 
