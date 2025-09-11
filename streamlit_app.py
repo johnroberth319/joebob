@@ -6,7 +6,12 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+st.title("JoeBob")
+def page_2():
+    st.title("CST435 - Deep Learning")
+
+pg = st.sidebar.selectbox("Select your page", ["Home", "CST435 - Deep Learning"])
+if pg == "CST435 - Deep Learning":
+    page_2()
+
+pg.run()
