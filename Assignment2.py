@@ -9,3 +9,6 @@ st.set_page_config(
 st.title("CST435 - Assignment 2")
 st.header("Artificial Neural Networks")
 st.subheader("by John Robert & Nolan")
+st.write("""
+    TBD
+""")
