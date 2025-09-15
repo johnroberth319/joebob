@@ -8,7 +8,7 @@ st.set_page_config(
 
 st.title("CST435 - Assignment 2")
 st.header("Artificial Neural Networks - Optimal NBA team")
-st.subheader("by John Robert & Nolan")
+st.write("by John Robert & Nolan")
 st.subheader("Project Description")
 st.write("""
     TBD
