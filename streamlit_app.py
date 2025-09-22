@@ -6,7 +6,7 @@ pages = {
     ],
     "GCU - CST435": [
         st.Page("Assignment2.py", title="Assignment 2"),
-        st.Page("Assignment2\MAIN.py", title="Assignment 2 - Main")
+        st.Page("Assignment2/MAIN.py", title="Assignment 2 - Main")
     ],
 }
 
