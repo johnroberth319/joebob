@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_squared_error, r2_score
+import pickle
 
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
