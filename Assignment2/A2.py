@@ -398,7 +398,6 @@ if st.button("Find Best Team"):
         X_train, X_test, y_train, y_test = nn.prepare_data("team_features.csv")
         nn.train_model(X_train, y_train, X_test, y_test, epochs=30, batch_size=64, patience=10)
         nn.save_model(MODEL_PATH)
-        nn.plot_training_history()
 
     best_team, score = find_optimal_team("Assignment2/relevant_data.csv", model=nn)
     st.subheader("Best Team Found")
