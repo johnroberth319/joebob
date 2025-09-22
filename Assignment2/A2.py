@@ -8,7 +8,6 @@ import streamlit as st
 from itertools import combinations
 from typing import List, Dict
 from tensorflow import keras
-import math
 
 # ==========================================
 # Neural Network Wrapper (Load Only)
@@ -77,9 +76,8 @@ def find_optimal_team(csv_file="relevant_data.csv", model=None, optional_max_tea
 
     best_score, best_team = 0, None
 
-    total_combinations = math.comb(len(df), 5)
+    total_combinations = len(list(combinations(range(len(df)), 5)))
     st.write(f"Total possible teams: {total_combinations:,}")
-
 
     if total_combinations > 100000:
         st.write(f"Too many combinations! Sampling {optional_max_teams} random teams...")
