@@ -68,7 +68,7 @@ class NeuralNetwork:
         print(self.model.summary())
         return model
     
-    def prepare_data(self, features_file="team_features.csv", test_size=0.2, random_state=42):
+    def prepare_data(self, features_file="Assignment2/team_features.csv", test_size=0.2, random_state=42):
         """
         Load and prepare data for training.
         
@@ -358,7 +358,7 @@ class BasketballTeamEvaluator:
 # ==========================================
 # Optimal Team Finder
 # ==========================================
-def find_optimal_team(csv_file="relevant_data.csv", model=None, optional_max_teams=500):
+def find_optimal_team(csv_file="Assignment2/relevant_data.csv", model=None, optional_max_teams=500):
     df = pd.read_csv(csv_file)
     evaluator = BasketballTeamEvaluator()
 
@@ -395,12 +395,12 @@ if st.button("Find Best Team"):
     else:
         st.write("Building and training new model...")
         nn.build_model()
-        X_train, X_test, y_train, y_test = nn.prepare_data("team_features.csv")
+        X_train, X_test, y_train, y_test = nn.prepare_data("Assignment2/team_features.csv")
         nn.train_model(X_train, y_train, X_test, y_test, epochs=30, batch_size=64, patience=10)
         nn.save_model(MODEL_PATH)
         nn.plot_training_history()
 
-    best_team, score = find_optimal_team("relevant_data.csv", model=nn)
+    best_team, score = find_optimal_team("Assignment2/relevant_data.csv", model=nn)
     st.subheader("Best Team Found")
     st.write(f"Predicted Score: {score:.4f}/1")
     st.dataframe(best_team)
