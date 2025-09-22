@@ -14,6 +14,7 @@ from tensorflow import keras
 sys.path.append(os.path.dirname(__file__))
 import ANN
 
+@st.cache_resource
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 ### teamGenerator.py ###
