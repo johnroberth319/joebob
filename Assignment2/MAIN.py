@@ -5,7 +5,7 @@
 # 3. ANN.py: defines neural network class for training and prediction.
 # 4. MAIN.py: main script to run the full pipeline. Finds the most optimal team. from a lot of different combinations.
 
-from Assignment2 import ANN
+from . import ANN
 import os
 import pandas as pd
 from itertools import combinations
